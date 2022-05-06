@@ -1,15 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Noto+Serif&family=Roboto+Condensed:ital,wght@1,300&family=Roboto+Slab&family=Updock&family=Whisper&display=swap");
 :root {
-  --color-font: ;
-  --font-size: ;
+  --font: 'Noto Sans JP', sans-serif;
+  --background-color: #FCFCFC;
+  --text-color: #000000;
 }
 
 .top-content .left-content {
   position: absolute;
-  width: 1440px;
+  width: 720px;
   height: 280px;
   left: 0px;
   top: 0px;
-  background: #FCFCFC;
+  background: var(--background-color);
 }
 
 .top-content .left-content .icons-carosel {
@@ -18,6 +20,21 @@
   height: 50px;
   left: 21px;
   top: 68px;
+  cursor: pointer;
+}
+
+.top-content .left-content .icons-carosel .next {
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
+}
+
+.top-content .left-content .icons-carosel .prev {
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
 }
 
 .top-content .left-content h1 {
@@ -26,8 +43,8 @@
   height: 92px;
   left: 96px;
   top: 44px;
-  font-weight: 100;
-  font-family: 'Noto Sans JP';
+  font-weight: 300;
+  font-family: var(--font);
   font-style: normal;
   font-size: 32px;
   line-height: 46px;
@@ -37,6 +54,24 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #000000;
+  color: var(--text-color);
+}
+
+.top-content .slide {
+  width: 816px;
+  height: 480px;
+  left: 544px;
+  top: -60px;
+  position: absolute;
+  opacity: 1;
+  -webkit-transition: opacity ease-in-out 0.5s;
+  transition: opacity ease-in-out 0.5s;
+}
+
+.top-content .slide img {
+  width: 100%;
+  height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=Global.css.map */

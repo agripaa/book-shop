@@ -1,16 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { dataSlider } from '../data/dataSlides'
 
 const Slider = () => {
-    const [] = useState();
-
     return (
         <div>
             {
                 dataSlider.map((e, i) => {
                     return (
-                        <div>
-                            <img src={process.env.PUBLIC_URL + `/images/image${i + 1}`} alt='carousel' />
+                        <div className='slide'>
+                            <img src={process.env.PUBLIC_URL + `/images/image${i + 1}.jpg`} title={e.title} alt='carousel' />
                         </div>
                     )
                 })

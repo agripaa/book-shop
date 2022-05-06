@@ -14,3 +14,9 @@ export const dataSlider = [
         title: "Photo Ketiga"
     },
 ]
+
+var data = [];
+data.push(dataSlider)
+
+console.log(data);
+export default dataSlider;

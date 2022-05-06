@@ -1,4 +1,4 @@
-import '../pages/sass/Global.css'
+import '../pages/sass/Global.css';
 
 // main routes
 export { default as Home } from '../pages/Home';
